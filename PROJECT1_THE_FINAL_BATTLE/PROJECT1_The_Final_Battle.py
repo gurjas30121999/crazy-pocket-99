@@ -86,6 +86,7 @@ while running:
     screen.blit(back,(0,0))
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
+            pygame.quit()
             running=False
         #KEY CONTROLS:
         if event.type==pygame.KEYDOWN:
